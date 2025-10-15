@@ -81,21 +81,21 @@ export const useAppStore = create((set, get) => {
     ...initial,
 
     // AUTH
-    registerUser: (name) => {
+    registerUser: (name, password) => {
       const id = `u_${
         crypto.randomUUID?.() || Math.random().toString(36).slice(2)
       }`;
       persist(({ auth }) => {
-        const user = { id, name, createdAt: Date.now() };
+        const user = { id, name, password, createdAt: Date.now() };
         const usersById = { ...auth.usersById, [id]: user };
         return { auth: { currentUserId: id, usersById } };
       });
       return id;
     },
-    loginUser: (name) => {
+    loginUser: (name, password) => {
       const { auth } = get();
       const found = Object.values(auth.usersById).find((u) => u.name === name);
-      if (found) {
+      if (found && (!found.password || found.password === password)) {
         persist({ auth: { ...auth, currentUserId: found.id } });
         return found.id;
       }
