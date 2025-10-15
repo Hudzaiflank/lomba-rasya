@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useAppStore, selectCurrentUser } from "../store/useAppStore";
 import AuthPage from "../views/AuthPage";
 import Dashboard from "../views/Dashboard";
@@ -15,7 +15,7 @@ function PrivateRoute({ children }) {
 
 export default function AppRouter() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/auth" element={<AuthPage />} />
         <Route
@@ -33,6 +33,6 @@ export default function AppRouter() {
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
