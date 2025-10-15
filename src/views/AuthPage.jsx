@@ -48,7 +48,7 @@ export default function AuthPage() {
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-green-300/20 to-emerald-400/20 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-pink-300/20 to-rose-400/20 rounded-full blur-3xl" />
-      
+
       <div className="mx-auto max-w-6xl px-4 py-10 flex flex-col lg:flex-row items-center gap-12 relative z-10 min-h-dvh">
         <div className="flex-1 text-center lg:text-left space-y-6">
           <div>
@@ -59,27 +59,33 @@ export default function AuthPage() {
               Platform edukasi keuangan seru untuk siswa SMP 🎓
             </p>
           </div>
-          
+
           <div className="space-y-4 max-w-lg mx-auto lg:mx-0">
             <div className="flex items-center gap-3 bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg">
               <div className="text-3xl">💰</div>
               <div className="text-left">
                 <div className="font-bold text-gray-800">Kelola Uang Jajan</div>
-                <div className="text-sm text-gray-600">Catat pengeluaran dan tabunganmu</div>
+                <div className="text-sm text-gray-600">
+                  Catat pengeluaran dan tabunganmu
+                </div>
               </div>
             </div>
             <div className="flex items-center gap-3 bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg">
               <div className="text-3xl">🎯</div>
               <div className="text-left">
                 <div className="font-bold text-gray-800">Capai Tujuan</div>
-                <div className="text-sm text-gray-600">Wujudkan impianmu dengan menabung</div>
+                <div className="text-sm text-gray-600">
+                  Wujudkan impianmu dengan menabung
+                </div>
               </div>
             </div>
             <div className="flex items-center gap-3 bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg">
               <div className="text-3xl">📚</div>
               <div className="text-left">
                 <div className="font-bold text-gray-800">Belajar Seru</div>
-                <div className="text-sm text-gray-600">Pahami konsep keuangan dengan mudah</div>
+                <div className="text-sm text-gray-600">
+                  Pahami konsep keuangan dengan mudah
+                </div>
               </div>
             </div>
           </div>
@@ -90,7 +96,9 @@ export default function AuthPage() {
             <div className="text-center mb-6">
               <div
                 className="w-16 h-16 mx-auto rounded-2xl mb-3 flex items-center justify-center text-white text-2xl font-bold shadow-lg"
-                style={{ background: `linear-gradient(135deg, ${colors.primary}, ${colors.pink})` }}
+                style={{
+                  background: `linear-gradient(135deg, ${colors.primary}, ${colors.pink})`,
+                }}
               >
                 F
               </div>
@@ -121,14 +129,18 @@ export default function AuthPage() {
                 <button
                   onClick={onLogin}
                   className="px-4 py-3 rounded-xl text-white font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
-                  style={{ background: `linear-gradient(135deg, ${colors.pink}, #FF6B9D)` }}
+                  style={{
+                    background: `linear-gradient(135deg, ${colors.pink}, #FF6B9D)`,
+                  }}
                 >
                   🔐 Masuk
                 </button>
                 <button
                   onClick={onRegister}
                   className="px-4 py-3 rounded-xl text-white font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
-                  style={{ background: `linear-gradient(135deg, ${colors.primary}, #5AB376)` }}
+                  style={{
+                    background: `linear-gradient(135deg, ${colors.primary}, #5AB376)`,
+                  }}
                 >
                   ✨ Daftar
                 </button>
@@ -136,7 +148,8 @@ export default function AuthPage() {
             </div>
 
             <div className="mt-6 text-center text-xs text-gray-500">
-              Dengan mendaftar, kamu setuju untuk belajar mengelola keuangan dengan bijak! 💪
+              Dengan mendaftar, kamu setuju untuk belajar mengelola keuangan
+              dengan bijak! 💪
             </div>
           </div>
         </div>

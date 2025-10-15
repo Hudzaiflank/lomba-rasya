@@ -27,15 +27,13 @@ export default function Layout() {
           <div className="flex items-center gap-3">
             <div
               className="w-10 h-10 rounded-xl shadow-lg flex items-center justify-center text-white font-bold"
-              style={{ 
+              style={{
                 background: `linear-gradient(135deg, ${colors.primary}, ${colors.pink})`,
               }}
             >
               F
             </div>
-            <div
-              className="text-xl font-bold bg-gradient-to-r from-green-600 to-pink-600 bg-clip-text text-transparent"
-            >
+            <div className="text-xl font-bold bg-gradient-to-r from-green-600 to-pink-600 bg-clip-text text-transparent">
               FinEdu
             </div>
           </div>
@@ -100,7 +98,9 @@ export default function Layout() {
             <button
               onClick={handleLogout}
               className="text-sm px-4 py-2 rounded-lg text-white font-medium shadow-md hover:shadow-lg transition-all"
-              style={{ background: `linear-gradient(135deg, ${colors.pink}, #FF6B9D)` }}
+              style={{
+                background: `linear-gradient(135deg, ${colors.pink}, #FF6B9D)`,
+              }}
             >
               Keluar
             </button>
@@ -198,7 +198,9 @@ export default function Layout() {
               <button
                 onClick={handleLogout}
                 className="w-full text-sm px-4 py-2 rounded-lg text-white font-medium shadow-md"
-                style={{ background: `linear-gradient(135deg, ${colors.pink}, #FF6B9D)` }}
+                style={{
+                  background: `linear-gradient(135deg, ${colors.pink}, #FF6B9D)`,
+                }}
               >
                 Keluar
               </button>
@@ -212,7 +214,8 @@ export default function Layout() {
       </main>
 
       <footer className="border-t bg-white/50 backdrop-blur-sm py-4 text-center text-xs text-gray-500">
-        &copy; {new Date().getFullYear()} FinEdu - Mengelola Keuangan dengan Cerdas
+        &copy; {new Date().getFullYear()} FinEdu - Mengelola Keuangan dengan
+        Cerdas
       </footer>
     </div>
   );
