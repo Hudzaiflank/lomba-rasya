@@ -1,0 +1,27 @@
+{
+  "name": "FinEdu - Platform Edukasi Keuangan",
+  "short_name": "FinEdu",
+  "description": "Platform edukasi keuangan interaktif untuk siswa SMP",
+  "start_url": "/lomba-rasya/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#71CB90",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "finance", "productivity"],
+  "lang": "id-ID",
+  "dir": "ltr"
+}
